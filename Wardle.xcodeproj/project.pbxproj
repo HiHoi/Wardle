@@ -16,6 +16,7 @@
 		D6120B2328C10BEF00728615 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6120B2228C10BEF00728615 /* KeyboardViewController.swift */; };
 		D6120B2528C10C0700728615 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6120B2428C10C0700728615 /* BoardViewController.swift */; };
 		D61C8B7F28C24D2C00BD184E /* KeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61C8B7E28C24D2C00BD184E /* KeyCell.swift */; };
+		D66B10C128CA3999003664E9 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66B10C028CA3999003664E9 /* Word.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D6120B2228C10BEF00728615 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		D6120B2428C10C0700728615 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 		D61C8B7E28C24D2C00BD184E /* KeyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCell.swift; sourceTree = "<group>"; };
+		D66B10C028CA3999003664E9 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				D6120B2228C10BEF00728615 /* KeyboardViewController.swift */,
 				D6120B2428C10C0700728615 /* BoardViewController.swift */,
 				D61C8B7E28C24D2C00BD184E /* KeyCell.swift */,
+				D66B10C028CA3999003664E9 /* Word.swift */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6120B1128C10B7D00728615 /* ViewController.swift in Sources */,
+				D66B10C128CA3999003664E9 /* Word.swift in Sources */,
 				D6120B0D28C10B7D00728615 /* AppDelegate.swift in Sources */,
 				D6120B0F28C10B7D00728615 /* SceneDelegate.swift in Sources */,
 				D61C8B7F28C24D2C00BD184E /* KeyCell.swift in Sources */,

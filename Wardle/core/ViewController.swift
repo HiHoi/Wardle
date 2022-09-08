@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     
     var answer = ""
     
+    
+    
     private var guesses : [[Character?]] = Array(
         repeating: Array(repeating: nil, count: 5),
         count: 6
@@ -29,8 +31,24 @@ class ViewController: UIViewController {
     let keyboardVC = KeyboardViewController()
     let boardVC = BoardViewController()
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //단어 호출
+        let urlString = "https://thatwordleapi.azurewebsites.net/get/"
+        if let url = URL(string: urlString){
+            let session = URLSession.shared
+            session.dataTask(with: url) { data, reponse, error in
+                if let data = data {
+                    do {
+                        let word : Word = try JSONDecoder().decode(Word.self, from: data)
+                        print(word)
+                    } catch let error {
+                        print(error)
+                    }
+                }
+            }.resume()
+        }
         answer = answers.randomElement() ?? "after"
         view.backgroundColor = .systemGray6
         addChildren()
