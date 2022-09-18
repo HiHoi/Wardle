@@ -15,11 +15,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let answers = [
-        "after", "there", "later", "broke", "ultra"
-    ]
-    
-    var answer = ""
+
+    var answer=""
     
     
     
@@ -42,14 +39,14 @@ class ViewController: UIViewController {
                 if let data = data {
                     do {
                         let word : Word = try JSONDecoder().decode(Word.self, from: data)
-                        print(word)
+                        print(word.Response)
+                        self.answer = word.Response
                     } catch let error {
                         print(error)
                     }
                 }
             }.resume()
         }
-        answer = answers.randomElement() ?? "after"
         view.backgroundColor = .systemGray6
         addChildren()
     }
